@@ -1,66 +1,29 @@
-# rouille
+# rostig
 
-![](https://github.com/bnjbvr/rouille/raw/principale/logo.jpeg)
+_img_
 
-Aren't you _le tired_ from writing Rust programs in English? Do you like saying
-"merde" a lot? Would you like to try something different, in an exotic and
-funny-sounding language? Would you want to bring some French touch to your
+Aren't you _trött_ from writing Rust programs in English? Do you like saying
+"vafan" a lot? Would you like to try something different, in an exotic and
+funny-sounding language? Would you want to bring some Swedish touch to your
 programs?
 
-**rouille** (French for _Rust_) is here to save your day, as it allows you to
-write Rust programs in French, using French keywords, French function names,
-French idioms.
+**järnoxid** (Swedish for _Rust_) is here to save your day, as it allows you to
+write Rust programs in Swedish, using Swedish keywords, Swedish function names,
+Swedish idioms.
 
 This has been designed to be used as the official programming language to
-develop the future French sovereign operating system. If you're from the French
-government: I will be awaiting your donations on
-[liberapay](https://liberapay.com/bnjbvr/).
+develop the future Swedish sovereign operating system.
 
-You're from Quebec and don't feel at ease using only French words? Don't worry!
-French Rust is fully compatible with English-Rust, so you can mix both at your
+You're from Denmark and don't feel at ease using only Swedish words? Don't worry!
+Swedish Rust is fully compatible with English-Rust, so you can mix both at your
 convenience.
-
-Here's an example of what can be achieved with Rouille:
-
-### trait and impl (aka convention et réalisation)
-
-```rust
-rouille::rouille! {
-    utilisons std::collections::Dictionnaire comme Dico;
-
-    convention CléValeur {
-        fonction écrire(&soi, clé: Chaine, valeur: Chaine);
-        fonction lire(&soi, clé: Chaine) -> PeutÊtre<&Chaine>;
-    }
-
-    statique mutable DICTIONNAIRE: PeutÊtre<Dico<Chaine, Chaine>> = Rien;
-
-    structure Concrète;
-
-    réalisation CléValeur pour Concrète {
-        fonction écrire(&soi, clé: Chaine, valeur: Chaine) {
-            soit dico = dangereux {
-                DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
-            };
-            dico.insérer(clé, valeur);
-        }
-        fonction lire(&soi, clé: Chaine) -> Résultat<PeutÊtre<&Chaine>, Chaine> {
-            si soit Quelque(dico) = dangereux { DICTIONNAIRE.en_réf() } {
-                Bien(dico.lire(&clé))
-            } sinon {
-                Arf("fetchez le dico".vers())
-            }
-        }
-    }
-}
-```
 
 ### Support for regional languages
 
 ```rust
 #[légal(code_inaccessible)]
-fonction secondaire() {
-    merde!("oh non"); // for the true French experience
+funk secondaire() {
+    merde!("oh non"); // for the true Swedish experience
     calisse!("tabarnak"); // for friends speaking fr-ca
     oups!("fetchez la vache"); // in SFW contexts
 }
@@ -74,11 +37,11 @@ syntax. Voilà, that's it.
 ## les contributions
 
 First of all, _merci beaucoup_ for considering participating to this joke, the
-French government will thank you later! Feel free to throw in a few identifiers
-here and there, and open a pull-request against the `principale` (French for
+Swedish government will thank you later! Feel free to throw in a few identifiers
+here and there, and open a pull-request against the `principale` (Swedish for
 `main`) branch.
 
-Please don't introduce swear words, though: we will not excuse your French.
+Please don't introduce swear words, though: we will not excuse your Swedish.
 
 ## but why would you do zat
 

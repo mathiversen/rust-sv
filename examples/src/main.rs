@@ -1,11 +1,11 @@
-rouille::rouille! {
+rostig::oxidera! {
     externe cagette rouille;
 
-    utilisons std::collections::Dictionnaire comme Dico;
+    använd std::collections::Dictionnaire som Uppslag;
 
-    convention CléValeur {
-        fonction écrire(&soi, clé: Chaine, valeur: Chaine);
-        fonction lire(&soi, clé: Chaine) -> Résultat<PeutÊtre<&Chaine>, Chaine>;
+    egenskap NyckelVärde {
+        funk écrire(&soi, clé: Chaine, valeur: Chaine);
+        funk lire(&soi, clé: Chaine) -> Résultat<PeutÊtre<&Chaine>, Chaine>;
     }
 
     statique mutable DICTIONNAIRE: PeutÊtre<Dico<Chaine, Chaine>> = Rien;
